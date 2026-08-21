@@ -8,6 +8,7 @@ from app1.schemas.update_basket import UpdateBasket
 from app1.schemas.checkout import CheckoutBasket
 from app1.schemas.add_comment import AddComment
 from app1.schemas.favorites import ToggleFavorite
+from app1.schemas.delete_comment import DeleteComment
 
 # Queries of app1 
 class Query(App1Query, graphene.ObjectType):
@@ -21,3 +22,4 @@ class Mutation(graphene.ObjectType):
     checkout_basket = CheckoutBasket.Field()
     add_comment = AddComment.Field()
     toggle_favorite = ToggleFavorite.Field()
+    delete_comment = DeleteComment.Field()

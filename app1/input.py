@@ -29,3 +29,6 @@ class CommentInput(graphene.InputObjectType):
 
 class ToggleFavoriteInput(graphene.InputObjectType):
     product_id = graphene.ID(required=True)
+
+class DeleteCommentInput(graphene.InputObjectType):
+    comment_id = graphene.ID(required=True)    
